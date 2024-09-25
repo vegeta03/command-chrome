@@ -76,36 +76,14 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
         },
-        "cypress-run": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "command-chrome:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "command-chrome:serve:production"
-            }
-          }
-        },
         "e2e": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "devServerTarget": "command-chrome:serve",
-            "watch": true,
-            "headless": false
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "command-chrome:serve:production"
-            }
-          }
+          "builder": "playwright-ng-schematics:playwright"
         }
       }
     }
   },
   "cli": {
     "schematicCollections": [
-      "@cypress/schematic",
       "@schematics/angular"
     ]
   }
