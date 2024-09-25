@@ -23,13 +23,14 @@
       "ES2022",
       "dom"
     ],
-    "types": ["jest"]
+    "types": [
+      "jest"
+    ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  },
-  "exclude": ["cypress", "./cypress.config.ts", "**/*.cy.tsx"]
+  }
 }
